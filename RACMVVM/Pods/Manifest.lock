@@ -1,23 +1,29 @@
 PODS:
-  - ReactiveCocoa (5.0.1):
-    - ReactiveSwift (~> 1.1)
-  - ReactiveSwift (1.1.0):
-    - Result (~> 3.1)
-  - Result (3.2.1)
+  - ReactiveCocoa (4.0.4-alpha-4):
+    - ReactiveCocoa/UI (= 4.0.4-alpha-4)
+    - Result (~> 1.0)
+  - ReactiveCocoa/Core (4.0.4-alpha-4):
+    - ReactiveCocoa/no-arc
+    - Result (~> 1.0)
+  - ReactiveCocoa/no-arc (4.0.4-alpha-4):
+    - Result (~> 1.0)
+  - ReactiveCocoa/UI (4.0.4-alpha-4):
+    - ReactiveCocoa/Core
+    - Result (~> 1.0)
+  - Result (1.0.2)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
-  - ReactiveCocoa (~> 5.0.1)
+  - ReactiveCocoa (~> 4.0.2-alpha-1)
   - SDWebImage (= 3.8.1)
 
 SPEC CHECKSUMS:
-  ReactiveCocoa: f577006aa6c7b0b08020109ebaae3b77ada00adc
-  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
-  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
+  ReactiveCocoa: e459ea92099447802df20c4735e31e8139b06094
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: 7918eae0b381e994d76d357a3ac4d8da66875eb2
+PODFILE CHECKSUM: e8713e38598949950c41300ab7c8cb84ecb428b8
 
 COCOAPODS: 1.2.0
