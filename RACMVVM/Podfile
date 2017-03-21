@@ -1,0 +1,10 @@
+
+platform :ios, '8.0'
+use_frameworks!
+
+target 'RACMVVM' do
+
+pod 'ReactiveCocoa', 		'~> 5.0.1’
+pod 'SDWebImage', '3.8.1'
+
+end
