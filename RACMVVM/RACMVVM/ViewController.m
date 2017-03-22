@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LoginViewController.h"
 #import "SearchViewController.h"
+#import "RequestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray<NSString *> *dataArray;
@@ -77,6 +78,8 @@
         newController = [LoginViewController new];
     } else if ([title hasPrefix:@"搜索"]) {
         newController = [SearchViewController new];
+    } else if ([title hasPrefix:@"block"]) {
+        newController = [RequestViewController new];
     }
     
     if (newController) {
