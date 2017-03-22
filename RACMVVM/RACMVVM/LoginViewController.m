@@ -20,6 +20,10 @@
 
 @implementation LoginViewController
 
+-(void)dealloc {
+    NSLog(@"[dealloc]%@",[self class]);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"登录";
