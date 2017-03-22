@@ -16,6 +16,8 @@
 		CEEB04A31E80FC53009CB82A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB04A11E80FC53009CB82A /* LaunchScreen.storyboard */; };
 		CEEB04B31E810EF4009CB82A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04B11E810EF4009CB82A /* LoginViewController.m */; };
 		CEEB04B41E810EF4009CB82A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB04B21E810EF4009CB82A /* LoginViewController.xib */; };
+		CEEB04DC1E820C9A009CB82A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04DA1E820C9A009CB82A /* SearchViewController.m */; };
+		CEEB04DD1E820C9A009CB82A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB04DB1E820C9A009CB82A /* SearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,9 @@
 		CEEB04B11E810EF4009CB82A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CEEB04B21E810EF4009CB82A /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CEEB04B51E811636009CB82A /* RACMVVM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACMVVM-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEEB04D91E820C9A009CB82A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		CEEB04DA1E820C9A009CB82A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		CEEB04DB1E820C9A009CB82A /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,9 @@
 				CEEB04B01E810EF4009CB82A /* LoginViewController.h */,
 				CEEB04B11E810EF4009CB82A /* LoginViewController.m */,
 				CEEB04B21E810EF4009CB82A /* LoginViewController.xib */,
+				CEEB04D91E820C9A009CB82A /* SearchViewController.h */,
+				CEEB04DA1E820C9A009CB82A /* SearchViewController.m */,
+				CEEB04DB1E820C9A009CB82A /* SearchViewController.xib */,
 				CEEB049C1E80FC53009CB82A /* Main.storyboard */,
 				CEEB049F1E80FC53009CB82A /* Assets.xcassets */,
 				CEEB04A11E80FC53009CB82A /* LaunchScreen.storyboard */,
@@ -177,6 +185,7 @@
 				CEEB04B41E810EF4009CB82A /* LoginViewController.xib in Resources */,
 				CEEB04A31E80FC53009CB82A /* LaunchScreen.storyboard in Resources */,
 				CEEB04A01E80FC53009CB82A /* Assets.xcassets in Resources */,
+				CEEB04DD1E820C9A009CB82A /* SearchViewController.xib in Resources */,
 				CEEB049E1E80FC53009CB82A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +247,7 @@
 			files = (
 				CEEB04B31E810EF4009CB82A /* LoginViewController.m in Sources */,
 				CEEB049B1E80FC53009CB82A /* ViewController.m in Sources */,
+				CEEB04DC1E820C9A009CB82A /* SearchViewController.m in Sources */,
 				CEEB04981E80FC53009CB82A /* AppDelegate.m in Sources */,
 				CEEB04951E80FC53009CB82A /* main.m in Sources */,
 			);

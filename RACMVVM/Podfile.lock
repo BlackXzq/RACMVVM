@@ -14,16 +14,19 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - ReactiveCocoa (~> 4.0.2-alpha-1)
   - SDWebImage (= 3.8.1)
+  - SVProgressHUD (~> 2.1.2)
 
 SPEC CHECKSUMS:
   ReactiveCocoa: e459ea92099447802df20c4735e31e8139b06094
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: e8713e38598949950c41300ab7c8cb84ecb428b8
+PODFILE CHECKSUM: 4ed74d6029f8a0b3c4c657bbedcbdc72a90a40b2
 
 COCOAPODS: 1.2.0
