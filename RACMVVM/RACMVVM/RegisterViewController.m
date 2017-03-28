@@ -6,11 +6,11 @@
 //  Copyright © 2017年 xuzhanqiang. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "RegisterViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
-@interface LoginViewController ()
+@interface RegisterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameText;
 @property (weak, nonatomic) IBOutlet UITextField *passwordText;
 @property (weak, nonatomic) IBOutlet UITextField *confirmText;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation LoginViewController
+@implementation RegisterViewController
 
 -(void)dealloc {
     NSLog(@"[dealloc]%@",[self class]);

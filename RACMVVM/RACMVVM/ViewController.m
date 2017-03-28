@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "LoginViewController.h"
+#import "RegisterViewController.h"
 #import "SearchViewController.h"
 #import "RequestViewController.h"
 #import "PersonViewController.h"
+#import "Login_ViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray<NSString *> *dataArray;
 @property (nonatomic, strong) UITableView *useTableView;
@@ -27,11 +28,12 @@
 
 - (void)setLocalData {
     _dataArray = [NSMutableArray array];
-    NSString *loginTitle = @"登录或注册";
+    NSString *loginTitle = @"登录";
+    NSString *registerTitle = @"注册";
     NSString *searchTitle = @"搜索";
     NSString *blockTitle = @"block嵌套";
     NSString *personTitle = @"Person";
-    [_dataArray addObjectsFromArray:@[loginTitle, searchTitle, blockTitle, personTitle]];
+    [_dataArray addObjectsFromArray:@[loginTitle, registerTitle, searchTitle, blockTitle, personTitle]];
 }
 
 - (UITableView *)useTableView {
@@ -77,14 +79,16 @@
     
     NSString *title = _dataArray[indexPath.row];
     UIViewController *newController = nil;
-    if ([title hasPrefix:@"登录"]) {
-        newController = [LoginViewController new];
+    if ([title hasPrefix:@"注册"]) {
+        newController = [RegisterViewController new];
     } else if ([title hasPrefix:@"搜索"]) {
         newController = [SearchViewController new];
     } else if ([title hasPrefix:@"block"]) {
         newController = [RequestViewController new];
     } else if ([title hasPrefix:@"Person"]) {
         newController = [PersonViewController new];
+    } else if ([title hasPrefix:@"登录"]) {
+        newController = [Login_ViewController new];
     }
     
     if (newController) {

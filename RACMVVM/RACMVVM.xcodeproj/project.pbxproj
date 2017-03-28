@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		124BE78E57F63775A8675FDD /* Pods_RACMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8C78378E736E7FEC358333 /* Pods_RACMVVM.framework */; };
+		CE9020101E8A1539001E67A3 /* Login_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90200E1E8A1539001E67A3 /* Login_ViewController.m */; };
+		CE9020111E8A1539001E67A3 /* Login_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE90200F1E8A1539001E67A3 /* Login_ViewController.xib */; };
 		CE9182921E88F4220024C7DE /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9182901E88F4220024C7DE /* PersonViewController.m */; };
 		CE9182931E88F4220024C7DE /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9182911E88F4220024C7DE /* PersonViewController.xib */; };
 		CE9182961E88F4430024C7DE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9182951E88F4430024C7DE /* Person.m */; };
@@ -18,8 +20,8 @@
 		CEEB049E1E80FC53009CB82A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB049C1E80FC53009CB82A /* Main.storyboard */; };
 		CEEB04A01E80FC53009CB82A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEEB049F1E80FC53009CB82A /* Assets.xcassets */; };
 		CEEB04A31E80FC53009CB82A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEB04A11E80FC53009CB82A /* LaunchScreen.storyboard */; };
-		CEEB04B31E810EF4009CB82A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04B11E810EF4009CB82A /* LoginViewController.m */; };
-		CEEB04B41E810EF4009CB82A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB04B21E810EF4009CB82A /* LoginViewController.xib */; };
+		CEEB04B31E810EF4009CB82A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04B11E810EF4009CB82A /* RegisterViewController.m */; };
+		CEEB04B41E810EF4009CB82A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB04B21E810EF4009CB82A /* RegisterViewController.xib */; };
 		CEEB04DC1E820C9A009CB82A /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04DA1E820C9A009CB82A /* SearchViewController.m */; };
 		CEEB04DD1E820C9A009CB82A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEEB04DB1E820C9A009CB82A /* SearchViewController.xib */; };
 		CEEB04E41E824D7B009CB82A /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04E21E824D7B009CB82A /* RequestViewController.m */; };
@@ -30,6 +32,9 @@
 		37A55ECE5FEBD58E1C748973 /* Pods-RACMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACMVVM/Pods-RACMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		679944ECEF4DB58AD32AE0E0 /* Pods-RACMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACMVVM/Pods-RACMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		BD8C78378E736E7FEC358333 /* Pods_RACMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE90200D1E8A1539001E67A3 /* Login_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_ViewController.h; sourceTree = "<group>"; };
+		CE90200E1E8A1539001E67A3 /* Login_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_ViewController.m; sourceTree = "<group>"; };
+		CE90200F1E8A1539001E67A3 /* Login_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login_ViewController.xib; sourceTree = "<group>"; };
 		CE91828F1E88F4220024C7DE /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		CE9182901E88F4220024C7DE /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		CE9182911E88F4220024C7DE /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
@@ -47,9 +52,9 @@
 		CEEB049F1E80FC53009CB82A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEEB04A21E80FC53009CB82A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEEB04A41E80FC53009CB82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEEB04B01E810EF4009CB82A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		CEEB04B11E810EF4009CB82A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		CEEB04B21E810EF4009CB82A /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CEEB04B01E810EF4009CB82A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		CEEB04B11E810EF4009CB82A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		CEEB04B21E810EF4009CB82A /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		CEEB04B51E811636009CB82A /* RACMVVM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RACMVVM-Bridging-Header.h"; sourceTree = "<group>"; };
 		CEEB04D91E820C9A009CB82A /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		CEEB04DA1E820C9A009CB82A /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
@@ -128,9 +133,12 @@
 				CEEB04971E80FC53009CB82A /* AppDelegate.m */,
 				CEEB04991E80FC53009CB82A /* ViewController.h */,
 				CEEB049A1E80FC53009CB82A /* ViewController.m */,
-				CEEB04B01E810EF4009CB82A /* LoginViewController.h */,
-				CEEB04B11E810EF4009CB82A /* LoginViewController.m */,
-				CEEB04B21E810EF4009CB82A /* LoginViewController.xib */,
+				CEEB04B01E810EF4009CB82A /* RegisterViewController.h */,
+				CEEB04B11E810EF4009CB82A /* RegisterViewController.m */,
+				CEEB04B21E810EF4009CB82A /* RegisterViewController.xib */,
+				CE90200D1E8A1539001E67A3 /* Login_ViewController.h */,
+				CE90200E1E8A1539001E67A3 /* Login_ViewController.m */,
+				CE90200F1E8A1539001E67A3 /* Login_ViewController.xib */,
 				CEEB04D91E820C9A009CB82A /* SearchViewController.h */,
 				CEEB04DA1E820C9A009CB82A /* SearchViewController.m */,
 				CEEB04DB1E820C9A009CB82A /* SearchViewController.xib */,
@@ -216,13 +224,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEB04B41E810EF4009CB82A /* LoginViewController.xib in Resources */,
+				CEEB04B41E810EF4009CB82A /* RegisterViewController.xib in Resources */,
 				CEEB04A31E80FC53009CB82A /* LaunchScreen.storyboard in Resources */,
 				CEEB04A01E80FC53009CB82A /* Assets.xcassets in Resources */,
 				CEEB04DD1E820C9A009CB82A /* SearchViewController.xib in Resources */,
 				CE9182931E88F4220024C7DE /* PersonViewController.xib in Resources */,
 				CEEB04E51E824D7B009CB82A /* RequestViewController.xib in Resources */,
 				CEEB049E1E80FC53009CB82A /* Main.storyboard in Resources */,
+				CE9020111E8A1539001E67A3 /* Login_ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,11 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEB04B31E810EF4009CB82A /* LoginViewController.m in Sources */,
+				CEEB04B31E810EF4009CB82A /* RegisterViewController.m in Sources */,
 				CEEB049B1E80FC53009CB82A /* ViewController.m in Sources */,
 				CE9182961E88F4430024C7DE /* Person.m in Sources */,
 				CEEB04E41E824D7B009CB82A /* RequestViewController.m in Sources */,
 				CE9182991E88F47D0024C7DE /* PersonViewModel.m in Sources */,
+				CE9020101E8A1539001E67A3 /* Login_ViewController.m in Sources */,
 				CE9182921E88F4220024C7DE /* PersonViewController.m in Sources */,
 				CEEB04DC1E820C9A009CB82A /* SearchViewController.m in Sources */,
 				CEEB04981E80FC53009CB82A /* AppDelegate.m in Sources */,
