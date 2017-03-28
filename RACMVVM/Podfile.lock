@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - ReactiveCocoa (4.0.4-alpha-4):
     - ReactiveCocoa/UI (= 4.0.4-alpha-4)
     - Result (~> 1.0)
@@ -17,16 +32,18 @@ PODS:
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
   - ReactiveCocoa (~> 4.0.2-alpha-1)
   - SDWebImage (= 3.8.1)
   - SVProgressHUD (~> 2.1.2)
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ReactiveCocoa: e459ea92099447802df20c4735e31e8139b06094
   Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 4ed74d6029f8a0b3c4c657bbedcbdc72a90a40b2
+PODFILE CHECKSUM: dcfbfd536baa7dc4e97badcedd41d9ebb79bf5ba
 
 COCOAPODS: 1.2.0

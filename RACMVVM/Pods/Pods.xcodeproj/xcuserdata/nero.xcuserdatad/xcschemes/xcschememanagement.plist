@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RACMVVM.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A4E5FB001D42DDF48D8EC51A0063E21</key>
+		<key>0B3AB380355AF80ADC080E4EB2D0B8F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3657CF5F0C8AB2894701BF8B73E6B879</key>
+		<key>100EC7924E0A33B74449A4B2ABA579DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41774F307ED50660CAA7DA65F0AEF5BB</key>
+		<key>91F43B3FD48B3CDBA013D4B2BCA4D9DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9BAFCA7B873FDC5045015D298FFB10CD</key>
+		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C61ADF14CDB17535A74F0AC058CFF835</key>
+		<key>D1E54A14F3F9A861585CE6E71B25FB38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E798B421A19F9C7875F1EC5AC8202450</key>
 		<dict>
 			<key>primary</key>
 			<true/>
