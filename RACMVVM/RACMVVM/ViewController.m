@@ -10,7 +10,7 @@
 #import "LoginViewController.h"
 #import "SearchViewController.h"
 #import "RequestViewController.h"
-
+#import "PersonViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray<NSString *> *dataArray;
 @property (nonatomic, strong) UITableView *useTableView;
@@ -30,12 +30,14 @@
     NSString *loginTitle = @"登录或注册";
     NSString *searchTitle = @"搜索";
     NSString *blockTitle = @"block嵌套";
-    [_dataArray addObjectsFromArray:@[loginTitle, searchTitle, blockTitle]];
+    NSString *personTitle = @"Person";
+    [_dataArray addObjectsFromArray:@[loginTitle, searchTitle, blockTitle, personTitle]];
 }
 
 - (UITableView *)useTableView {
     if (!_useTableView) {
-        _useTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _useTableView = [[UITableView alloc] initWithFrame:self.view.bounds
+                                                     style:UITableViewStylePlain];
         _useTableView.delegate = self;
         _useTableView.dataSource = self;
         [self.view addSubview:_useTableView];
@@ -55,7 +57,8 @@
     static NSString *reusableCellKey = @"reusableCellKey";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reusableCellKey];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reusableCellKey];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:reusableCellKey];
     }
     if (_dataArray.count > indexPath.row) {
         NSString *title = _dataArray[indexPath.row];
@@ -80,9 +83,12 @@
         newController = [SearchViewController new];
     } else if ([title hasPrefix:@"block"]) {
         newController = [RequestViewController new];
+    } else if ([title hasPrefix:@"Person"]) {
+        newController = [PersonViewController new];
     }
     
     if (newController) {
+        newController.title = title;
         [self.navigationController pushViewController:newController animated:true];
     }
 }

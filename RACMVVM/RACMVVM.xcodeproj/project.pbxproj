@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		124BE78E57F63775A8675FDD /* Pods_RACMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8C78378E736E7FEC358333 /* Pods_RACMVVM.framework */; };
+		CE9182921E88F4220024C7DE /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9182901E88F4220024C7DE /* PersonViewController.m */; };
+		CE9182931E88F4220024C7DE /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9182911E88F4220024C7DE /* PersonViewController.xib */; };
+		CE9182961E88F4430024C7DE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9182951E88F4430024C7DE /* Person.m */; };
+		CE9182991E88F47D0024C7DE /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9182981E88F47D0024C7DE /* PersonViewModel.m */; };
 		CEEB04951E80FC53009CB82A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04941E80FC53009CB82A /* main.m */; };
 		CEEB04981E80FC53009CB82A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB04971E80FC53009CB82A /* AppDelegate.m */; };
 		CEEB049B1E80FC53009CB82A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB049A1E80FC53009CB82A /* ViewController.m */; };
@@ -26,6 +30,13 @@
 		37A55ECE5FEBD58E1C748973 /* Pods-RACMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACMVVM/Pods-RACMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		679944ECEF4DB58AD32AE0E0 /* Pods-RACMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACMVVM/Pods-RACMVVM.release.xcconfig"; sourceTree = "<group>"; };
 		BD8C78378E736E7FEC358333 /* Pods_RACMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RACMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE91828F1E88F4220024C7DE /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		CE9182901E88F4220024C7DE /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		CE9182911E88F4220024C7DE /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
+		CE9182941E88F4430024C7DE /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CE9182951E88F4430024C7DE /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CE9182971E88F47D0024C7DE /* PersonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewModel.h; sourceTree = "<group>"; };
+		CE9182981E88F47D0024C7DE /* PersonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewModel.m; sourceTree = "<group>"; };
 		CEEB04901E80FC53009CB82A /* RACMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEB04941E80FC53009CB82A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEEB04961E80FC53009CB82A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +88,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE91828E1E88F4100024C7DE /* personMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				CE91828F1E88F4220024C7DE /* PersonViewController.h */,
+				CE9182901E88F4220024C7DE /* PersonViewController.m */,
+				CE9182911E88F4220024C7DE /* PersonViewController.xib */,
+				CE9182941E88F4430024C7DE /* Person.h */,
+				CE9182951E88F4430024C7DE /* Person.m */,
+				CE9182971E88F47D0024C7DE /* PersonViewModel.h */,
+				CE9182981E88F47D0024C7DE /* PersonViewModel.m */,
+			);
+			path = personMVVM;
+			sourceTree = "<group>";
+		};
 		CEEB04871E80FC53009CB82A = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +137,7 @@
 				CEEB04E11E824D7B009CB82A /* RequestViewController.h */,
 				CEEB04E21E824D7B009CB82A /* RequestViewController.m */,
 				CEEB04E31E824D7B009CB82A /* RequestViewController.xib */,
+				CE91828E1E88F4100024C7DE /* personMVVM */,
 				CEEB049C1E80FC53009CB82A /* Main.storyboard */,
 				CEEB049F1E80FC53009CB82A /* Assets.xcassets */,
 				CEEB04A11E80FC53009CB82A /* LaunchScreen.storyboard */,
@@ -194,6 +220,7 @@
 				CEEB04A31E80FC53009CB82A /* LaunchScreen.storyboard in Resources */,
 				CEEB04A01E80FC53009CB82A /* Assets.xcassets in Resources */,
 				CEEB04DD1E820C9A009CB82A /* SearchViewController.xib in Resources */,
+				CE9182931E88F4220024C7DE /* PersonViewController.xib in Resources */,
 				CEEB04E51E824D7B009CB82A /* RequestViewController.xib in Resources */,
 				CEEB049E1E80FC53009CB82A /* Main.storyboard in Resources */,
 			);
@@ -256,7 +283,10 @@
 			files = (
 				CEEB04B31E810EF4009CB82A /* LoginViewController.m in Sources */,
 				CEEB049B1E80FC53009CB82A /* ViewController.m in Sources */,
+				CE9182961E88F4430024C7DE /* Person.m in Sources */,
 				CEEB04E41E824D7B009CB82A /* RequestViewController.m in Sources */,
+				CE9182991E88F47D0024C7DE /* PersonViewModel.m in Sources */,
+				CE9182921E88F4220024C7DE /* PersonViewController.m in Sources */,
 				CEEB04DC1E820C9A009CB82A /* SearchViewController.m in Sources */,
 				CEEB04981E80FC53009CB82A /* AppDelegate.m in Sources */,
 				CEEB04951E80FC53009CB82A /* main.m in Sources */,

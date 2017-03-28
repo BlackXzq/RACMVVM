@@ -26,7 +26,6 @@ typedef void(^CheckNumberResponse)(BOOL);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"搜索";
     [self setRACDemo];
     @weakify(self);
     [[self.checkBtn rac_signalForControlEvents:UIControlEventTouchUpInside]

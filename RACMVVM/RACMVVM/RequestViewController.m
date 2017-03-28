@@ -26,7 +26,6 @@ typedef void(^requestFailure)(NSInteger status, NSError *error);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Request Block";
     [self.view addSubview:self.useTableView];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"刷新"
                                                                               style:UIBarButtonItemStylePlain
