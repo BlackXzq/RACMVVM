@@ -10,6 +10,10 @@
 		124BE78E57F63775A8675FDD /* Pods_RACMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8C78378E736E7FEC358333 /* Pods_RACMVVM.framework */; };
 		CE9020101E8A1539001E67A3 /* Login_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90200E1E8A1539001E67A3 /* Login_ViewController.m */; };
 		CE9020111E8A1539001E67A3 /* Login_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE90200F1E8A1539001E67A3 /* Login_ViewController.xib */; };
+		CE9020161E8A5148001E67A3 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9020151E8A5148001E67A3 /* UserModel.m */; };
+		CE9020191E8A515C001E67A3 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9020181E8A515C001E67A3 /* UserViewModel.m */; };
+		CE90201F1E8A56DF001E67A3 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90201D1E8A56DF001E67A3 /* UserDetailViewController.m */; };
+		CE9020201E8A56DF001E67A3 /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE90201E1E8A56DF001E67A3 /* UserDetailViewController.xib */; };
 		CE9182921E88F4220024C7DE /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9182901E88F4220024C7DE /* PersonViewController.m */; };
 		CE9182931E88F4220024C7DE /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9182911E88F4220024C7DE /* PersonViewController.xib */; };
 		CE9182961E88F4430024C7DE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9182951E88F4430024C7DE /* Person.m */; };
@@ -35,6 +39,13 @@
 		CE90200D1E8A1539001E67A3 /* Login_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_ViewController.h; sourceTree = "<group>"; };
 		CE90200E1E8A1539001E67A3 /* Login_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_ViewController.m; sourceTree = "<group>"; };
 		CE90200F1E8A1539001E67A3 /* Login_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login_ViewController.xib; sourceTree = "<group>"; };
+		CE9020141E8A5148001E67A3 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		CE9020151E8A5148001E67A3 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		CE9020171E8A515C001E67A3 /* UserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
+		CE9020181E8A515C001E67A3 /* UserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
+		CE90201C1E8A56DF001E67A3 /* UserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
+		CE90201D1E8A56DF001E67A3 /* UserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewController.m; sourceTree = "<group>"; };
+		CE90201E1E8A56DF001E67A3 /* UserDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		CE91828F1E88F4220024C7DE /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
 		CE9182901E88F4220024C7DE /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
 		CE9182911E88F4220024C7DE /* PersonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonViewController.xib; sourceTree = "<group>"; };
@@ -93,6 +104,55 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE9020121E8A5127001E67A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE9020141E8A5148001E67A3 /* UserModel.h */,
+				CE9020151E8A5148001E67A3 /* UserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE9020131E8A5127001E67A3 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE9020171E8A515C001E67A3 /* UserViewModel.h */,
+				CE9020181E8A515C001E67A3 /* UserViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		CE90201A1E8A5177001E67A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB04991E80FC53009CB82A /* ViewController.h */,
+				CEEB049A1E80FC53009CB82A /* ViewController.m */,
+				CEEB04B01E810EF4009CB82A /* RegisterViewController.h */,
+				CEEB04B11E810EF4009CB82A /* RegisterViewController.m */,
+				CEEB04B21E810EF4009CB82A /* RegisterViewController.xib */,
+				CE90200D1E8A1539001E67A3 /* Login_ViewController.h */,
+				CE90200E1E8A1539001E67A3 /* Login_ViewController.m */,
+				CE90200F1E8A1539001E67A3 /* Login_ViewController.xib */,
+				CEEB04D91E820C9A009CB82A /* SearchViewController.h */,
+				CEEB04DA1E820C9A009CB82A /* SearchViewController.m */,
+				CEEB04DB1E820C9A009CB82A /* SearchViewController.xib */,
+				CEEB04E11E824D7B009CB82A /* RequestViewController.h */,
+				CEEB04E21E824D7B009CB82A /* RequestViewController.m */,
+				CEEB04E31E824D7B009CB82A /* RequestViewController.xib */,
+				CE90201C1E8A56DF001E67A3 /* UserDetailViewController.h */,
+				CE90201D1E8A56DF001E67A3 /* UserDetailViewController.m */,
+				CE90201E1E8A56DF001E67A3 /* UserDetailViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CE90201B1E8A51AD001E67A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CE91828E1E88F4100024C7DE /* personMVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,20 +191,10 @@
 			children = (
 				CEEB04961E80FC53009CB82A /* AppDelegate.h */,
 				CEEB04971E80FC53009CB82A /* AppDelegate.m */,
-				CEEB04991E80FC53009CB82A /* ViewController.h */,
-				CEEB049A1E80FC53009CB82A /* ViewController.m */,
-				CEEB04B01E810EF4009CB82A /* RegisterViewController.h */,
-				CEEB04B11E810EF4009CB82A /* RegisterViewController.m */,
-				CEEB04B21E810EF4009CB82A /* RegisterViewController.xib */,
-				CE90200D1E8A1539001E67A3 /* Login_ViewController.h */,
-				CE90200E1E8A1539001E67A3 /* Login_ViewController.m */,
-				CE90200F1E8A1539001E67A3 /* Login_ViewController.xib */,
-				CEEB04D91E820C9A009CB82A /* SearchViewController.h */,
-				CEEB04DA1E820C9A009CB82A /* SearchViewController.m */,
-				CEEB04DB1E820C9A009CB82A /* SearchViewController.xib */,
-				CEEB04E11E824D7B009CB82A /* RequestViewController.h */,
-				CEEB04E21E824D7B009CB82A /* RequestViewController.m */,
-				CEEB04E31E824D7B009CB82A /* RequestViewController.xib */,
+				CE90201A1E8A5177001E67A3 /* Controller */,
+				CE90201B1E8A51AD001E67A3 /* View */,
+				CE9020121E8A5127001E67A3 /* Model */,
+				CE9020131E8A5127001E67A3 /* viewModel */,
 				CE91828E1E88F4100024C7DE /* personMVVM */,
 				CEEB049C1E80FC53009CB82A /* Main.storyboard */,
 				CEEB049F1E80FC53009CB82A /* Assets.xcassets */,
@@ -226,6 +276,7 @@
 			files = (
 				CEEB04B41E810EF4009CB82A /* RegisterViewController.xib in Resources */,
 				CEEB04A31E80FC53009CB82A /* LaunchScreen.storyboard in Resources */,
+				CE9020201E8A56DF001E67A3 /* UserDetailViewController.xib in Resources */,
 				CEEB04A01E80FC53009CB82A /* Assets.xcassets in Resources */,
 				CEEB04DD1E820C9A009CB82A /* SearchViewController.xib in Resources */,
 				CE9182931E88F4220024C7DE /* PersonViewController.xib in Resources */,
@@ -293,7 +344,10 @@
 				CEEB04B31E810EF4009CB82A /* RegisterViewController.m in Sources */,
 				CEEB049B1E80FC53009CB82A /* ViewController.m in Sources */,
 				CE9182961E88F4430024C7DE /* Person.m in Sources */,
+				CE9020161E8A5148001E67A3 /* UserModel.m in Sources */,
 				CEEB04E41E824D7B009CB82A /* RequestViewController.m in Sources */,
+				CE90201F1E8A56DF001E67A3 /* UserDetailViewController.m in Sources */,
+				CE9020191E8A515C001E67A3 /* UserViewModel.m in Sources */,
 				CE9182991E88F47D0024C7DE /* PersonViewModel.m in Sources */,
 				CE9020101E8A1539001E67A3 /* Login_ViewController.m in Sources */,
 				CE9182921E88F4220024C7DE /* PersonViewController.m in Sources */,
